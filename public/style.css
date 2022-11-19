@@ -6,25 +6,31 @@
     border-radius: 5px;
 }
 
-.main-card {
+.mainCard {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 5px;
+}
+
+.rowCard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .card h2{
     color: aqua;
 }
-.card .card-title{
+.card .cardTitle{
     font-size: 24px;
     font-weight: 700;
     color: lightcoral;
 }
-.card .card-designation{
+.card .cardDesignation{
     color: lightseagreen;
 }
 
-.card .blood-group{
+.card .bloodGroup{
     color: yellowgreen;
 }
 
