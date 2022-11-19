@@ -1,4 +1,33 @@
-.cardDesign {
-    background: "lightcyan";
-    margin: "10px";
+.card {
+    text-align: center;
+    border: 2px dashed lightblue;
+    display: inline-block;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.main-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card h2{
+    color: aqua;
+}
+.card .card-title{
+    font-size: 24px;
+    font-weight: 700;
+    color: lightcoral;
+}
+.card .card-designation{
+    color: lightseagreen;
+}
+
+.card .blood-group{
+    color: yellowgreen;
+}
+
+.card .email{
+    color: lightgreen;
 }
