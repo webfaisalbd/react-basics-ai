@@ -1,12 +1,12 @@
 import React from 'react'
-import Lists from './uniqueList/Lists'
+import Nested from './nestedMapping/Nested';
 
 const App = () => {
   return (
     <>
-        <Lists />
+        <Nested />
     </>
   )
 }
 
-export default App
+export default App;
