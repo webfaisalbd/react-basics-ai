@@ -1,6 +1,6 @@
 import Data from '../data.json';
 import ShowCard from './ShowCard';
-// console.log(Data);
+console.log(Data);
 
 function ShowCards() {
     

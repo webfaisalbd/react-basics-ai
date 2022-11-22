@@ -1,14 +1,12 @@
-import ShowCards from "./practiceComponent/ShowCards";
+import React from 'react'
+import Lists from './uniqueList/Lists'
 
-
-function App() {
-
-
-    return (        
-        <>
-            <ShowCards />
-        </>
-    );
+const App = () => {
+  return (
+    <>
+        <Lists />
+    </>
+  )
 }
 
-export default App;
+export default App
