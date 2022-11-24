@@ -1,11 +1,11 @@
 import React from 'react'
-import InsideReact from './reactUnderTheHood/InsideReact';
+import ReactBootstrap from './reactBootstrap/ReactBootstrap';
 
 
 const App = () => {
   return (
     <>
-        <InsideReact />
+        <ReactBootstrap />
     </>
   )
 }
