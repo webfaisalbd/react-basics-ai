@@ -1,12 +1,11 @@
 import React from 'react'
-import Card2 from './classComponent/Card2';
+import InsideReact from './reactUnderTheHood/InsideReact';
 
 
 const App = () => {
   return (
     <>
-        
-        <Card2 name="Faisal" dept="IT" />
+        <InsideReact />
     </>
   )
 }
