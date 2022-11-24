@@ -5,6 +5,10 @@ function Todo1(){
         <div>
             <p>First Paragraph</p>
             <p>Second Paragraph</p>
+            <div>
+                <p>Inside div1</p>
+                <p>Inside div2</p>
+            </div>
         </div>
     )
 }
@@ -12,7 +16,10 @@ function Todo1(){
 function Todo2() {
     return React.createElement("div",{}, 
     React.createElement("p", {}, "One Paragraph"),
-    React.createElement("p", {}, "Two Paragraph")
+    React.createElement("p", {}, "Two Paragraph"),
+    React.createElement("div",{}, 
+    React.createElement("p", {}, "Inside div1"),
+    React.createElement("p", {}, "Inside div2"))
     );
 }
 
