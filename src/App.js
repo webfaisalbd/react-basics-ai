@@ -1,10 +1,12 @@
 import React from 'react'
-import Nested from './nestedMapping/Nested';
+import Card2 from './classComponent/Card2';
+
 
 const App = () => {
   return (
     <>
-        <Nested />
+        
+        <Card2 name="Faisal" dept="IT" />
     </>
   )
 }

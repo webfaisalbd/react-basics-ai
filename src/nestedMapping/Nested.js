@@ -23,13 +23,15 @@ function Nested() {
 
     return <>
         {
-            users.map((user) => <div style={{ background: "lightblue" }}>
+            users.map((user, index) => <div key={index} style={{ background: "lightblue" }}>
                 <h2>{user.name}</h2>
                 <h3>{user.age}</h3>
                 {
-                    user.phone.map((phn) => {
-                        return <h4>{phn}</h4>
-                    })
+                    user.phone.map((phn, index) => (
+                          <div key={index}>
+                            <h4>{phn}</h4>
+                        </div>
+                    ))
                 }
             </div>)
         }
