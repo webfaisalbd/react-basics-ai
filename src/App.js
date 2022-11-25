@@ -1,12 +1,10 @@
 import React from 'react'
-import ReactBootstrap from './reactBootstrap/ReactBootstrap';
-import ReactBootstrapAgain from './reactBootstrap/ReactBootstrapAgain';
-import State from './stateClassComponent/State'
+import AppPage from './conditionalRendering/AppPage';
 
 const App = () => {
   return (
     <>
-        <State name="FAS" />
+        <AppPage />
     </>
   )
 }

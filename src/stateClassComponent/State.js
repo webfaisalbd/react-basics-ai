@@ -3,7 +3,6 @@ import './style.css';
 
 class State extends Component {
 
-
     constructor(props){
         super(props)
 
@@ -25,9 +24,6 @@ class State extends Component {
     }
 
     render() {
-
-
-
 
         return (
             <>
