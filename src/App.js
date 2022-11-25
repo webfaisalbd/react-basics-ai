@@ -1,13 +1,12 @@
 import React from 'react'
 import ReactBootstrap from './reactBootstrap/ReactBootstrap';
 import ReactBootstrapAgain from './reactBootstrap/ReactBootstrapAgain';
-
+import State from './stateClassComponent/State'
 
 const App = () => {
   return (
     <>
-        <ReactBootstrap />
-        <ReactBootstrapAgain />
+        <State name="FAS" />
     </>
   )
 }
