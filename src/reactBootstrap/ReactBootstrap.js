@@ -34,9 +34,9 @@ function ReactBootstrap() {
             </Navbar>
         </div>
 
-        <div className="bannerCard" style={{ height: '400px'}}>
+        <div className="bannerCard" style={{ height: '350px'}}>
             <Card>
-                <Card.Img variant="top" src={Burger}  style={{ height: '400px'}} />
+                <Card.Img variant="top" src={Burger}  style={{ height: '350px'}} />
             </Card>
         </div>
     </>
