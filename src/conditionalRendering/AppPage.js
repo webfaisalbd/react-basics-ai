@@ -14,13 +14,14 @@ class AppPage extends Component {
 
     render() {
 
-        const {isLogin} = this.state;
+        const { isLogin } = this.state;
 
-        let element = isLogin ?  <HomePage /> : <LoginPage />
+        // let element = isLogin ?  <HomePage /> : <LoginPage />
 
         return (
             <>
-                {element}
+                {isLogin && <HomePage />}
+                {!isLogin && <LoginPage />}
             </>
         )
     }
