@@ -16,14 +16,7 @@ class AppPage extends Component {
 
         const {isLogin} = this.state;
 
-        let element;
-
-        if(isLogin){
-            element = <HomePage />
-        }
-        else {
-            element = <LoginPage />
-        }
+        let element = isLogin ?  <HomePage /> : <LoginPage />
 
         return (
             <>
