@@ -13,12 +13,23 @@ class AppPage extends Component {
     }
 
     render() {
-        if(this.state.isLogin){
-            return <HomePage />
+
+        const {isLogin} = this.state;
+
+        let element;
+
+        if(isLogin){
+            element = <HomePage />
         }
         else {
-            return <LoginPage />
+            element = <LoginPage />
         }
+
+        return (
+            <>
+                {element}
+            </>
+        )
     }
 }
 export default AppPage;
