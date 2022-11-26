@@ -1,10 +1,10 @@
 import React from 'react'
-import EventPage from './eventHandleClass/EventPage';
+import EventBinding from './eventBinding/EventBinding';
 
 const App = () => {
   return (
     <>
-        <EventPage />
+        <EventBinding />
     </>
   )
 }
