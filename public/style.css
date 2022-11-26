@@ -37,3 +37,7 @@
 .card .email{
     color: lightgreen;
 }
+
+input {
+    border: 2px solid red;
+}

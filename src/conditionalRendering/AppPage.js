@@ -8,15 +8,13 @@ class AppPage extends Component {
         super(props)
 
         this.state = {
-            isLogin: false
+            isLogin: true
         }
     }
 
     render() {
 
         const { isLogin } = this.state;
-
-        // let element = isLogin ?  <HomePage /> : <LoginPage />
 
         return (
             <>

@@ -1,10 +1,10 @@
 import React from 'react'
-import AppPage from './conditionalRendering/AppPage';
+import EventPage from './eventHandleClass/EventPage';
 
 const App = () => {
   return (
     <>
-        <AppPage />
+        <EventPage />
     </>
   )
 }
