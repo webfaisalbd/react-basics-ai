@@ -1,10 +1,11 @@
 import React from 'react'
-import EventBinding from './eventBinding/EventBinding';
+import UseStateHook from './useStateHook/UseStateHook';
 
 const App = () => {
   return (
     <>
-        <EventBinding />
+        {/* <ClassComponent /> */}
+        <UseStateHook />
     </>
   )
 }
