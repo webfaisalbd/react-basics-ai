@@ -1,9 +1,27 @@
+import React, { useEffect, useState } from "react";
+
 function Style(){
-    const error = false;
+    const [name, setName] = useState('');
+    const [validInput, setValidInput] = useState(false);
+
+    useEffect(()=> {
+        if(name.length < 2){
+            setValidInput(false)
+        }
+        else {
+            setValidInput(true)
+        }
+    },[name])
+
+    const handleChange = (e) => {
+        setName(e.target.value);
+    } 
     return (
         <>
-            <h1 style={{color: error ? "red" : "green", background: error ? "yellow" : "lightblue"}}>Welcome</h1>
+            <input type="text" value={name} onChange={handleChange} 
+            style={{ background :  validInput ? "green" : "red"}} />
         </>
     )
+    
 }
 export default Style;
