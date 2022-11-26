@@ -7,6 +7,9 @@ function UseStateHook(){
     const handleIncrement = () => {
         setCount(count+1);
     }
+    const handleDecrement = () => {
+        setCount(count-1);
+    }
 
     // function handleIncrement2() {
     //     setCount(count+1);
@@ -16,6 +19,7 @@ function UseStateHook(){
         <>
             <h2>Count: {count}</h2>
             <button onClick={handleIncrement}>Increment</button>
+            <button onClick={handleDecrement}>Decrement</button>
         </>
     )
 }

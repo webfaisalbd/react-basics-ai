@@ -1,11 +1,10 @@
 import React from 'react'
-import UseStateHook from './useStateHook/UseStateHook';
+import Style from './dynamicStyle/Style';
 
 const App = () => {
   return (
     <>
-        {/* <ClassComponent /> */}
-        <UseStateHook />
+        <Style />
     </>
   )
 }
