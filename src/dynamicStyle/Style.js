@@ -10,7 +10,7 @@ function Style(){
         }
         else {
             setValidInput(true)
-        }
+        } 
     },[name])
 
     const handleChange = (e) => {
@@ -18,8 +18,10 @@ function Style(){
     } 
     return (
         <>
+            {/* <input type="text" value={name} onChange={handleChange} 
+            style={{ background :  validInput ? "green" : "red"}} /> */}
             <input type="text" value={name} onChange={handleChange} 
-            style={{ background :  validInput ? "green" : "red"}} />
+            className={`${validInput ? "valid" : "invalid"}`} />
         </>
     )
     

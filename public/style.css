@@ -41,3 +41,11 @@
 input {
     border: 2px solid red;
 }
+
+.valid {
+    background: green;
+}
+
+.invalid {
+    background: red;
+}
