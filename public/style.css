@@ -38,9 +38,9 @@
     color: lightgreen;
 }
 
-input {
+/* input {
     border: 2px solid red;
-}
+} */
 
 .valid {
     background: green;

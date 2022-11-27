@@ -1,10 +1,10 @@
 import React from 'react'
-import Style from './dynamicStyle/Style';
+import Form from './form/Form'
 
 const App = () => {
   return (
     <>
-        <Style />
+        <Form />
     </>
   )
 }
