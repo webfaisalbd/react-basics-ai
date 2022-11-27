@@ -18,7 +18,16 @@ const Form = () => {
     }
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(name, email, password);
+        // console.log(name, email, password);
+        let userInfo = {
+            // name: name,
+            // email: email,
+            // password: password
+            name,
+            email,
+            password
+        }
+        console.log(userInfo);
     }
 
 
