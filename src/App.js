@@ -6,9 +6,9 @@ import FormClass from './formClassComponent/FormClass';
 const App = () => {
   return (
     <>
-        {/* <Form3 /> */}
+        <Form3 />
         {/* <Form2 /> */}
-        <FormClass />
+        {/* <FormClass /> */}
     </>
   )
 }
