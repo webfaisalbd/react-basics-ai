@@ -3,9 +3,9 @@ import style from './form.module.css'
 
 const Form2 = () => {
 
-    const [user, setUser] = useState({ name: '', email: '', password: '' });
+    const [user, setUser] = useState({ name: '', email: '', password: '', color: '' });
 
-    const { name, email, password } = user;
+    const { name, email, password, color } = user;
 
     const handleChange = (e) => {
 
@@ -48,6 +48,16 @@ const Form2 = () => {
                     <label htmlFor="password">Password: </label>
                     <input type="password" name="password" id="password" required onChange={handleChange}
                         value={password} />
+                </div>
+                <div className={style.formGroup}>
+                    <select value={color}
+                        onChange={handleChange}
+                    >
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                        <option value="green">Green</option>
+                    </select>
+
                 </div>
                 <div>
                     <button type='submit'>Register</button>
