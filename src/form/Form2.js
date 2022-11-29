@@ -10,7 +10,7 @@ const Form2 = () => {
     const handleChange = (e) => {
 
         setUser({ ...user, [e.target.name]: e.target.value })
-
+ 
         // const filledName = e.target.name;
         // if(filledName === "name"){
         //     setUser({name: e.target.value, email, password});

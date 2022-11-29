@@ -1,14 +1,17 @@
 import React from 'react'
-import Form2 from './form/Form2';
-import Form3 from './form/Form3';
-import FormClass from './formClassComponent/FormClass';
+import Child from './stateLifting/Child';
 
 const App = () => {
+
+  const data = "I am from Parent (App)";
+
+  const handleChildData = (childData) => {
+    console.log(childData)
+  }
+
   return (
     <>
-        <Form3 />
-        {/* <Form2 /> */}
-        {/* <FormClass /> */}
+        <Child data={data} onChildData={handleChildData} />
     </>
   )
 }
