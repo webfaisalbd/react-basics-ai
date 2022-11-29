@@ -1,17 +1,15 @@
 import React from 'react'
 
-const Child = (props) => {
+const Child = ({data, onHandleChild}) => {
+    const childData = "I am from child data";
 
-const data = "I am from child component(Child)";
+    onHandleChild(childData);
 
-props.onChildData(data);
-
-  return (
-    <div>
-        <p>I am child Component</p>
-        <p>{props.data}</p>
-    </div>
-  )
+    return (
+        <div>
+            <p>I am Child: {data}</p>
+        </div>
+    )
 }
 
-export default Child
+export default Child;
