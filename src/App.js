@@ -1,5 +1,6 @@
 import React from 'react'
-import Home from './stateLifting/Home'
+
+import Home from './todoStateLifting/Home'
 
 const App = () => {
   return (
