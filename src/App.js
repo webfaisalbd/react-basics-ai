@@ -1,10 +1,13 @@
 import React from 'react'
-import SignUp from './form-validation-formik/SignUp'
+import SignUpFormik from './form-validation-formik/SignUpFormik'
+import SignUpFormik2 from './form-validation-formik/SignUpFormik2'
+
 
 const App = () => {
   return (
     <>
-      <SignUp />
+      {/* <SignUpFormik /> */}
+      <SignUpFormik2 />
     </>
   )
 }
