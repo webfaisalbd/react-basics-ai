@@ -1,11 +1,11 @@
 import React from 'react'
-import NormalFormYup from './form-validation-formik/NormalFormYup'
+import NormalFormYup2 from './form-validation-formik/NormalFormYup2'
 
 
 const App = () => {
   return (
     <>
-      <NormalFormYup />
+      <NormalFormYup2 />
     </>
   )
 }
