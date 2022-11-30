@@ -1,11 +1,10 @@
 import React from 'react'
-
-import Home from './todoStateLifting/Home'
+import SignUp from './form-validation-formik/SignUp'
 
 const App = () => {
   return (
     <>
-      <Home />
+      <SignUp />
     </>
   )
 }

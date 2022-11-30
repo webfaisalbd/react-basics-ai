@@ -12,10 +12,9 @@ const NewTodo = (props) => {
         e.preventDefault();
     
         props.onNewTodo(todo); 
-        
 
+        setTodo('');
     }
-
 
   return (
     <>
@@ -26,5 +25,4 @@ const NewTodo = (props) => {
     </>
   )
 }
-
 export default NewTodo
