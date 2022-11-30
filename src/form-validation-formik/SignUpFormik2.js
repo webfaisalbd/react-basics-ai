@@ -1,39 +1,39 @@
-import React, { useState } from 'react'
+import React from 'react'
+
+import { useFormik } from 'formik';
 
 const SignUpFormik2 = () => {
-    const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
 
-    const handleNameChange = (e) => {
-        setName(e.target.value);
-    }
-    const handleEmailChange = (e) => {
-        setEmail(e.target.value);
-    }
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        
-        const newUser = {
-            name,
-            email
+    const formik = useFormik({
+        initialValues: {
+            name: '',
+            email: ''
+        },
+        onSubmit: (values, {resetForm}) => {
+            console.log(values);
+
+            resetForm({
+                name: '',
+                email: ''
+            })
         }
-        console.log(newUser);
-    }
+    })
+
     return (
         <>
             <h2>Sign Up Form: </h2>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={formik.handleSubmit}>
                 <div>
                     <label htmlFor="name">Name: </label>
                     <input type="text" name="name" id="name"
-                    onChange={handleNameChange}
-                    value={name} />
+                        onChange={formik.handleChange}
+                        value={formik.values.name} />
                 </div>
                 <div>
                     <label htmlFor="email">Email: </label>
                     <input type="email" name="email" id="email"
-                    onChange={handleEmailChange}
-                    value={email} />
+                        onChange={formik.handleChange}
+                        value={formik.values.email} />
                 </div>
                 <button type='submit'>Submit</button>
             </form>
