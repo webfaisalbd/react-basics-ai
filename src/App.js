@@ -1,11 +1,11 @@
 import React from 'react'
-import Toogle from './Toogle/Toogle'
+import Toogle2 from './Toogle/Toogle2'
 
 
 const App = () => {
   return (
     <>
-      <Toogle />
+      <Toogle2 />
     </>
   )
 }
