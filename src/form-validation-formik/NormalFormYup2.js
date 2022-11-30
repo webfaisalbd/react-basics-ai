@@ -30,7 +30,7 @@ const NormalFormYup2 = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log(user);
+        // console.log(user);
 
         const isValid = await userSchema.isValid(user);
         console.log(isValid);

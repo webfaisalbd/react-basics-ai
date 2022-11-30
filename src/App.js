@@ -1,11 +1,11 @@
 import React from 'react'
-import NormalFormYup2 from './form-validation-formik/NormalFormYup2'
+import Toogle from './Toogle/Toogle'
 
 
 const App = () => {
   return (
     <>
-      <NormalFormYup2 />
+      <Toogle />
     </>
   )
 }
