@@ -1,12 +1,12 @@
 import React from 'react'
 
-import UseEffectExample2 from './hooks/useEffect/UseEffectExample2'
+import DataFetch2 from './hooks/useEffect/DataFetch2'
 
 
 const App = () => {
   return (
     <>
-      <UseEffectExample2 />
+      <DataFetch2 />
     </>
   )
 }
