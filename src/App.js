@@ -1,11 +1,12 @@
 import React from 'react'
-import Faqs from './faqs/Faqs'
+
+import UseEffectExample from './hooks/useEffect/UseEffectExample'
 
 
 const App = () => {
   return (
     <>
-      <Faqs />
+      <UseEffectExample />
     </>
   )
 }

@@ -12,7 +12,7 @@ const Faq = ({ id, title, desc }) => {
                     <h4>{title}</h4>
                     <button onClick={() => setToggle(!toggle)}>{toggle ? "-" : "+"}</button>
                 </div>
-                {toggle && <p style={{background: "orange", padding: '15px'}}>{desc}</p>}
+                {toggle && <p style={{background: "orange", padding: '15px', marginTop:'10px'}}>{desc}</p>}
             </article>
         </>
     )
