@@ -1,12 +1,13 @@
 import React from 'react'
 
-import DataFetch2 from './hooks/useEffect/DataFetch2'
-
+import DataFetch from './hooks/useEffect/DataFetch'
+import ErrorDataFetch from './hooks/useEffect/ErrorDataFetch'
 
 const App = () => {
   return (
     <>
-      <DataFetch2 />
+      {/* <DataFetch /> */}
+      <ErrorDataFetch />
     </>
   )
 }
