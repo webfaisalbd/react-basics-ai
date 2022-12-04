@@ -4,6 +4,7 @@ import React from 'react'
 // import ErrorDataFetch from './hooks/useEffect/ErrorDataFetch'
 // import DataFetch from './customHooks/DataFetch'
 import DataFetch2 from './customHooks/DataFetch2'
+import Fragment from './fragment/Fragment'
 // import DataFetch2 from './hooks/useEffect/DataFetch2'
 import DataFetchLoading from './hooks/useEffect/DataFetchLoading'
 // import UserForm from './hooks/useRef/UserForm'
@@ -24,12 +25,14 @@ const App = () => {
 
       {/* <DataFetch2 /> */}
 
-      
+
       {/* useRef hook for functional component
       <UserForm /> */}
 
+      {/* createRef  for class component
+      <UserForm /> */}
 
-      <UserForm />
+      <Fragment />
 
     </>
   )
