@@ -6,7 +6,10 @@ import React from 'react'
 import DataFetch2 from './customHooks/DataFetch2'
 // import DataFetch2 from './hooks/useEffect/DataFetch2'
 import DataFetchLoading from './hooks/useEffect/DataFetchLoading'
-import UserForm from './hooks/useRef/UserForm'
+// import UserForm from './hooks/useRef/UserForm'
+
+import UserForm from './refExample/UserForm'
+
 
 const App = () => {
   return (
@@ -20,6 +23,11 @@ const App = () => {
       {/* <DataFetchLoading /> */}
 
       {/* <DataFetch2 /> */}
+
+      
+      {/* useRef hook for functional component
+      <UserForm /> */}
+
 
       <UserForm />
 
