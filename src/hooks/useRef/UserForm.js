@@ -10,13 +10,13 @@ const UserForm = () => {
         e.preventDefault();
         const userName = userNameRef.current.value;
         const password = userPasswordRef.current.value;
-        console.log({userName, password});
+        console.log({ userName, password });
 
         userNameRef.current.style.color = "blue";
     }
-
     return (
         <>
+            <h3>User Form:</h3>
             <form onSubmit={handleSubmit}>
                 <div>
                     <label htmlFor="name">Name: </label>
@@ -31,5 +31,4 @@ const UserForm = () => {
         </>
     )
 }
-
 export default UserForm

@@ -5,15 +5,12 @@ class UserForm extends Component {
     constructor(props) {
         super(props)
 
-        this.state = {
-
-        }
+        this.state = {}
 
         this.userNameRef = createRef();
         this.userPasswordRef = createRef();
 
     }
-
     handleSubmit = (e) => {
         e.preventDefault();
         console.log(this.userNameRef.current.value);
@@ -21,7 +18,6 @@ class UserForm extends Component {
 
         this.userNameRef.current.style.color = "blue";
     }
-
     render() {
         return (
             <>
@@ -41,5 +37,4 @@ class UserForm extends Component {
         );
     }
 }
-
 export default UserForm;
