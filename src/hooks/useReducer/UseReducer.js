@@ -8,7 +8,8 @@ const booksData = [
 
 const reducer = (state, action) => {
     // action.type     action.payload 
-    if(action.type === "ADD"){
+    if (action.type === "ADD") {
+        // ADD 
         const allBooks = [...state.books, action.payload]
         return {
             ...state,
@@ -17,7 +18,7 @@ const reducer = (state, action) => {
             modalText: "Book is added"
         }
     }
-    if(action.type === "REMOVE"){
+    if (action.type === "REMOVE") {
         // REMOVE 
         const filteredBooks = [...state.books].filter(book => book.id !== action.payload);
         return {
@@ -38,7 +39,7 @@ function UseReducer() {
         modalText: ''
     })
 
- 
+
 
     const [bookName, setBookName] = useState('');
 
@@ -47,7 +48,7 @@ function UseReducer() {
 
         const newBook = { id: new Date().getTime().toString(), name: bookName };
 
-        dispatch({type: "ADD", payload: newBook})
+        dispatch({ type: "ADD", payload: newBook })
         setBookName('');
 
     }
@@ -57,7 +58,7 @@ function UseReducer() {
     }
 
     const removeBook = (id) => {
-        dispatch({type: "REMOVE", payload: id})
+        dispatch({ type: "REMOVE", payload: id })
     }
 
     return (
@@ -72,7 +73,7 @@ function UseReducer() {
             {
                 bookState.books.map((book) => {
                     const { id, name } = book;
-                    return <li key={id}>{name} <button onClick={()=> {removeBook(id)}}>Remove</button></li>
+                    return <li key={id}>{name} <button onClick={() => { removeBook(id) }}>Remove</button></li>
                 })
             }
         </>
