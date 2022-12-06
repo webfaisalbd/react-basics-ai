@@ -10,6 +10,8 @@ function UseReducer() {
 
     const [books, setBooks] = useState(booksData);
     const [bookName, setBookName] = useState('');
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [modalText, setModalText] = useState('');
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -17,6 +19,13 @@ function UseReducer() {
         setBooks([...books, newBook]);
         // for reset input field 
         setBookName('');
+
+        setIsModalOpen(true);
+        setModalText("book is added.")
+    }
+
+    const Modal = ({ modalText }) => {
+        return <p>{modalText}</p>
     }
 
     return (
@@ -26,6 +35,7 @@ function UseReducer() {
                 <button>Add Book</button>
             </form>
 
+            {isModalOpen && <Modal modalText={modalText} />}
 
             {
                 books.map((book) => {
