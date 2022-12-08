@@ -1,24 +1,28 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Users from './Users'
+
+console.log(PropTypes);
 
 const User = (props) => {
+    console.log(props.user);
     return (
         <div>
-            <h3>{props.userId}</h3>
-            <h2>{props.userName}</h2>
+            <h1>{props.user.id}</h1>
+            <h1>{props.user.name}</h1>
         </div>
     )
 }
 
+// User.propTypes = {
+//     user: PropTypes.object.isRequired,
+// }
+
 User.propTypes = {
-    userName: PropTypes.string,
-    userId: PropTypes.number
+    user: PropTypes.shape({
+        id: PropTypes.number,
+        name: PropTypes.string
+    })
 }
 
-User.defaultProps = {
-    userName: "Default Name",
-    userId: 0
-}
 
 export default User
