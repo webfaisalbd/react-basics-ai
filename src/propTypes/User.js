@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-console.log(PropTypes);
+// console.log(PropTypes);
 
 const User = (props) => {
     console.log(props.user);
